@@ -1,0 +1,47 @@
+
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,dt,dd,dl{
+   margin:0;
+   padding:0;
+  }
+h1,h2,h3,h4,h5,h6{
+   font-size:16px;
+   font-weight:normal;
+}
+ul,ol,li{
+   list-style:none;
+}
+a,u{
+   text-decoration:none;
+}
+i,em{
+   font-style:normal;
+}
+b,strong{
+   font-weight:normal;
+}
+img{
+   display:block;
+   border:0;
+}
+input{
+   border:0;
+}
+.fix_clear:after{
+   content:".";
+   display:block;
+   clear:both;
+   height:0;
+   overflow:hidden;
+}
+.fix_clear{
+   zoom:1;
+   /*IE清楚浮动的兼容*/
+}
+
+/*头部*/
+.header{
+  background: white;
+  height: 80px;
+  width: 100%;
+  border-bottom:4px solid #ff464e ;
+}

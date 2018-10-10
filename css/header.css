@@ -1,0 +1,163 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,dt,dd,dl{
+   margin:0;
+   padding:0;
+  }
+h1,h2,h3,h4,h5,h6{
+   font-size:16px;
+   font-weight:normal;
+}
+ul,ol,li{
+   list-style:none;
+}
+a,u{
+   text-decoration:none;
+}
+i,em{
+   font-style:normal;
+}
+b,strong{
+   font-weight:normal;
+}
+img{
+   display:block;
+   border:0;
+}
+input{
+   border:0;
+}
+.fix_clear:after{
+   content:".";
+   display:block;
+   clear:both;
+   height:0;
+   overflow:hidden;
+}
+.fix_clear{
+   zoom:1;
+   /*IE清楚浮动的兼容*/
+}
+ 
+
+ /*头部*/
+ body{background: #f6f6f6;}
+ .top{
+    height: 30px;
+    background: #f6f6f6;
+}
+.top ul{float: right;}
+.top ul li{float: left;}
+.top ul li a{margin-left:25px; 
+font-size: 13px;
+line-height: 30px;}
+.top ul li:nth-child(7) a{padding-right:40px; }
+.top ul li:nth-child(2) a{color: red; }
+.top ul li:nth-child(5) a{margin-left:8px;  }
+.top ul li i {background: url(../images/icon-total.png) no-repeat 0px -156px;
+
+       margin-left: 18px;
+display:inline-block;
+width: 16px;
+height: 18px;}
+.top ul li a:hover{
+    color:red;
+}
+.top ul li:nth-child(5) a:hover{
+    color: black;
+}
+.top ul li:nth-child(5):hover{
+    background: white;
+}
+.top ul li em{
+    background: none repeat scroll 0 0 #ff464e;
+    border-radius: 15px;
+    color: #fff;
+    display: inline;
+    font-family: "宋体";
+    height: 18px;
+    line-height: 18px;
+    margin: 3px 0 0 5px;
+    text-align: center;
+    width: 18px;
+    float: right;
+}
+.inp{
+    height: 104px;
+    background: white;
+    border-bottom: 2px solid #ff464e;
+    padding-top: 19px;
+
+}
+.logo{
+     float: left;
+}
+
+.logo a img{
+display: block;
+    width: 196px;
+    margin-left:30px; 
+
+
+height: 44px;}
+.update{
+   
+    margin-left:250px; 
+    float: left;
+    width: 460px;
+    height: 50px;
+    background: url(../images/header-total.gif) no-repeat 0 10px;
+
+}
+
+.search{width: 200px;
+height: 35px;
+text-indent:1em;
+ outline: medium;
+background: #efefef;
+margin-left:0px; }
+
+.search_sumbit{
+    display: inline-block;
+    
+    height: 35px;
+    width: 35px;
+    background: url(../images/header-total.gif)
+    -465px -65px;
+    margin-left:-5px; 
+    float: right;
+    margin-right:91px; 
+
+}
+.nav{
+    position: absolute;
+    top:114px;
+    left:30px;
+}
+.nav li{float: left;
+margin-left:25px; 
+width: 55px;
+height: 30px;
+
+border-radius: 10px 10px 0px 0px;
+padding-top: 10px;
+padding-left: 20px;
+}
+.nav li a{
+    color:black;
+    font-size: 13px;
+}
+.nav li:nth-child(1){
+    background: #ff464e;
+}
+
+.nav li:hover a{
+    color: #ff464e;
+}
+.nav li:nth-child(1) a{
+   color:white;
+}
+
+
+ /*头部*/
+
+
+

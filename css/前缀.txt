@@ -1,0 +1,67 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,dt,dd,dl{
+   margin:0;
+   padding:0;
+  }
+h1,h2,h3,h4,h5,h6{
+   font-size:16px;
+   font-weight:normal;
+}
+ul,ol,li{
+   list-style:none;
+}
+a,u{
+   text-decoration:none;
+}
+i,em{
+   font-style:normal;
+}
+b,strong{
+   font-weight:normal;
+}
+img{
+   display:block;
+   border:0;
+}
+input{
+   border:0;
+}
+.fix_clear:after{
+   content:".";
+   display:block;
+   clear:both;
+   height:0;
+   overflow:hidden;
+}
+.fix_clear{
+   zoom:1;
+   /*IE清楚浮动的兼容*/
+}
+
+
+
+
+
+移动端<meta标签>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure,figcaption{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+ul,ol,li{list-style:none;}
+b,strong{font-weight:normal;}
+em,i{font-style:normal;}
+a,u{text-decoration: none;}
+img{border:0;display:block;}
+input{outline:none;}
+
+*{
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+}
+
+
+
+
+640px→32.25vw
+750px→26.67vw

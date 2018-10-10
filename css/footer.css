@@ -1,0 +1,149 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,dt,dd,dl{
+   margin:0;
+   padding:0;
+  }
+h1,h2,h3,h4,h5,h6{
+   font-size:16px;
+   font-weight:normal;
+}
+ul,ol,li{
+   list-style:none;
+}
+a,u{
+   text-decoration:none;
+}
+i,em{
+   font-style:normal;
+}
+b,strong{
+   font-weight:normal;
+}
+img{
+   display:block;
+   border:0;
+}
+input{
+   border:0;
+}
+.fix_clear:after{
+   content:".";
+   display:block;
+   clear:both;
+   height:0;
+   overflow:hidden;
+}
+.fix_clear{
+   zoom:1;
+   /*IE清楚浮动的兼容*/
+}
+
+/*底部*/
+.footer{
+    height: 352px;
+    border-top:5px #ff464e solid; 
+    margin: 30px auto;
+    position: relative;
+  }
+  .footer_top{
+    width: 1200px;
+    height: 170px;
+    margin: 30px auto;
+    border-bottom:1px dotted #cccccc; 
+    position: relative;
+  }
+  .sao{
+    height: 118px;
+    width: 90px;
+    float: left;
+    margin-left:50px; 
+}
+.sao p{
+    font-size: 14px;
+    margin-top: 15px;
+}
+.footer_top ul{
+float: left;
+margin-left:80px; 
+}
+.footer_top ul li{
+    list-style: disc;
+    list-style-position: inside;
+    margin-top:10px;
+    font-size: 12px;
+    
+}
+.footer_top ul li a{
+    color: #6f6a66; 
+}
+.footer_top ul:nth-child(3){
+    margin-left:100px;
+}
+.footer_top ul:nth-child(4){
+    margin-left:120px;
+}
+.footer_top ul:nth-child(5){
+    margin-left:136px;
+}
+.footer_top_right {
+    float: right;
+    padding-top: 28px;
+    padding-right: 30px;
+}
+
+
+.footer_top_right a{
+   display: inline-block;
+   width: 90px;
+   height:40px;
+    background: url(../images/service_add.gif)no-repeat
+    ;
+}
+.footer_top_right p{
+    display: inline-block;
+    width: 70px;
+    height: 38px;
+    font-size: 11px;
+    line-height: 18px;
+}
+.friend{
+   top:135px; 
+    /*margin-right:150px; */
+    position: absolute;
+    left: -50px;
+}
+.friend li{
+    list-style: none !important;
+    float: left;
+    margin-left:20px; 
+
+}
+.footer_down{
+    width: 1200px;
+    height: 145px;
+    margin: 0 auto;
+    
+}
+.footer_down p{
+    text-align: center;
+    color: #cccccc;
+    font-size: 12px;
+}
+.footer_down p a{
+      color: #cccccc;
+    font-size: 12px;
+    
+}
+.footer_down p a:hover{
+    text-decoration: underline;
+}
+.police{
+    width:580px;
+    height: 50px;
+    position: absolute;
+    top: 280px;
+    left: 380px;
+}
+.police a{
+    display: inline-block;
+    margin: 15px;
+}
