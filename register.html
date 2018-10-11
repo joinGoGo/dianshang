@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/register.css">
         <link rel="stylesheet" href="//at.alicdn.com/t/font_865838_bs9o5113td6.css">
+         <link href="juan_03.ico" type="image/x-icon" rel="shortcut icon"/>
+        <title>免费注册,独享淘宝天猫一折商品</title>
       
     </head>
     <body>
    <!-- 头部 -->
    <div class="header">
        <div class="header_border">
-       <a href=""></a>
+       <a href="index.html"></a>
        <a href=""></a>
        </div>
    </div>
@@ -21,7 +23,7 @@
     <h2>新用户注册</h2>
     <h3>注册卷皮网,赢积分换好礼</h3>
     <h4>已有账号?</h4>
-    <p><a href="">立即登录</a></p>
+    <p><a href="login.html">立即登录</a></p>
      </div>
       <div class="login">
         <div class="filter"></div>
@@ -29,34 +31,27 @@
         <div class="all">
             <form class="login-form" onsubmit="return false">
                 
-                <i class="ico icon-lianxiren lianxiren"></i>
-                <input  class="namer" name="username" type="text" required="required" placeholder="手机号/邮箱/昵称" />
-                
+               <div>手机号码:
+                <input  class="namer" name="username" type="text" required="required" autocomplete="off" >
+                </div>
                
-               <div> <i class="ico icon-mimasuo suo"></i>
-                <input  class="pass" name="password" type="password" required="required" placeholder="密码" />
+               <div>创建密码:
+                <input  class="pass" name="password" type="password" required="required" placeholder="6-16位数字或字母" />
                 </div>
-                <div class="option"><p class="free_login">两周内免登陆</p>
-                <a href="" class="lose_pass">忘记密码?</a>
+                 <div>确认密码:
+                <input  class="pass" name="sure_password" type="password" required="required" placeholder="6-16位数字或字母" />
                 </div>
+              
                 <button class="but" type="submit" name="login-btn">立即注册</button>
             </form>
         </div>
-   <div class="joinweb_login">
-    <p>合作网站账号登录</p>
-    <a href=""></a>
-     <a href=""></a>
-      <a href=""></a>
-</div>
-<div class="phone_login">
-    <i></i>
-    <p>手机快捷登录>></p>
-</div>
+
+
     </div>
-    <script src="js/common/ajax.js"></script>
-  <script src="js/login.js"></script>
+   <script src="js/common/ajax.js"></script>
+    <script src="js/register.js"></script>
     <script>
-       login.init('.login-form');
+        register.init('.login-form');
     </script>
     </div>
   <div class="footer_down">

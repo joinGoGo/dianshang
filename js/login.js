@@ -26,7 +26,7 @@
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:8/28DAY(1)/admin/php/login.php', params);
+                sendAjax('http://localhost:8/juanpi_1/php/login.php', params);
             }
         },
         loginSuccess: function(data) {

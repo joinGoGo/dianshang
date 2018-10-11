@@ -1,0 +1,121 @@
+html,body,ul,li,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,dt,dd,dl{
+   margin:0;
+   padding:0;
+  }
+h1,h2,h3,h4,h5,h6{
+   font-size:16px;
+   font-weight:normal;
+}
+ul,ol,li{
+   list-style:none;
+}
+a,u{
+   text-decoration:none;
+}
+i,em{
+   font-style:normal;
+}
+b,strong{
+   font-weight:normal;
+}
+img{
+   display:block;
+   border:0;
+}
+input{
+   border:0;
+}
+.fix_clear:after{
+   content:".";
+   display:block;
+   clear:both;
+   height:0;
+   overflow:hidden;
+}
+.fix_clear{
+   zoom:1;
+   /*IE清楚浮动的兼容*/
+}
+
+/*主体*/
+/*dirctory*/
+body{
+    /*background: white;*/
+}
+.x_main{
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background: white;
+    padding-top: 20px;
+    padding-left:20px; 
+}
+.dirctory a{
+    font-size: 12px;
+    color: black;
+}
+/*缩略图*/
+.thumb{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    /*background: orange;*/
+    margin-top:10px; 
+}
+.thumb .box {
+      padding: 20px;
+    }
+   .thumb  .show-image {
+      position: relative;
+      width: 360px;
+      font-size: 0;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+   .thumb  .show-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+   .thumb  .filter {
+      position: absolute;
+      left: 0px;
+      top:0;
+      width: 150px;
+      height: 150px;
+      background: rgba(0,0,0,0.6);
+      cursor: move;
+      display: none;
+    }
+   .thumb  .img-box {
+      padding: 10px;
+    }
+    .thumb  .img-box>li {
+      display: inline-block;
+      border: 1px solid transparent;
+      margin-left: 10px;
+    }
+   .thumb  .img-box>li img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .thumb .img-box>li:hover,
+    .thumb .img-box>li.active {
+      border: 1px solid #000;
+    }
+    .thumb .show-big-image {
+      position: absolute;
+      left: 510px;
+      top: 50px;
+      width: 450px;
+      height: 450px;
+      overflow: hidden;
+      border: 1px solid #eee;
+      display: none;
+    }
+   .thumb  .show-big-image img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+    }
+
