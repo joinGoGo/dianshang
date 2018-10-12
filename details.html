@@ -25,6 +25,9 @@
         <a href="">美食></a>
         <a href="">香酥小黄鱼200g</a>
     </div>
+    <div class="uper">
+    返回顶部
+</div>
     <!-- 缩略图 -->
     <div class="thumb">
         <div class="box">
@@ -142,16 +145,109 @@
 
     </script>
     </div>
+   <!-- 商品介绍 -->
+  
+   <div class="introduce">
+       <h2>休闲零食小鱼干小鱼仔即食小吃鱼片香酥小黄鱼200g</h2>
+       <div class="price">
+           <h3>&nbsp; ¥35.9</h3>
+           <h4>参考价:¥99</h4>
+           <h5>&nbsp;促销:&nbsp;&nbsp;满99元减50,上不封顶 详情>></h5>
+           <p>&nbsp;领券:&nbsp;&nbsp;满5减5</p>
+       </div>
+        <div class="buy">
+            <div class="rule">
+            <p>尺码:</p>
+            <div>200G</div>
+            </div>
+            <div class="count">
+                <div class="count_1">数量:</div>
+                <div class="jia_jian">
+                    
+                    <p>
+                        <i class="decrease">-</i>
+                        <input type="text" value="1" autocomplete="off">
+                        <i class="increase">+</i>
+                    </p>
+                </div>
+            </div>
+           <div class="click_buy"> 
+           <input type="button" name="" id="" value="立即购买">
+            <input type="button" name="" id="" value="加入购物车">
+            </div>
+        </div>
+       </div>
     </div>
+   <!-- 图片展示 -->
+   <div class="img_show">
+       <div>
+       <img src="images/yu1.jpg" alt="">
+       <img src="images/yu2.jpg" alt="">
+        <img src="images/yu3.jpg" alt="">
+       <img src="images/yu4.jpg" alt="">
+        <img src="images/yu5.jpg" alt="">
+       <img src="images/yu6.jpg" alt="">
+        <img src="images/yu7.jpg" alt="">
+       <img src="images/yu8.jpg" alt="">
+       </div>
+
+   </div>
     <div class="bottom">
-        
+          
     </div>
     <div class="side_r"></div>
+   <!-- 改变滚轮高度,显示隐藏元素 -->
+<div class="scrol_nav">
+      <ul>
+            <li> <a href="login.html">商品详情</a> </li>
+            <li><a href="register.html">商品规格</a></li>
+            <li><a href="">物流与售后</a></li>
+            <li><a href="">消费保障</a></li>
+            <li> <a href="">手机购买</a>  </li>
+            <li> ¥35.9</li>
+            <li class="car">加入购物车</li>
+        </ul>
+</div>
+
+<script>
+     var $uper = document.querySelector('.uper');
+     
+      window.onscroll = function() {
+                        // 获取滚动距离
+                       var top = document.documentElement.scrollTop;
+                       // console.log(top);
+                      var $scrol_nav = document.querySelector('.scrol_nav');
+                       if(top >= 900) {
+                         $scrol_nav.style.display = 'block';
+                         $uper.style.display = 'block';
+                       } else {
+                         $scrol_nav.style.display = 'none';
+                         $uper.style.display = 'none';
+                       }
+                   }
+ 
+ 
+                     $uper.onclick = function() {
+                         var time = setInterval(function() {
+                           var _top = document.documentElement.scrollTop - 10;
+                           if(_top <= 0) {
+                              _top = 0;
+                              clearInterval(time);
+                           }
+                           document.documentElement.scrollTop =  _top;
+                       }, 10);
+                   }
+</script>
+    <!-- <script src="js/back_top.js"></script> -->
+ 
     <script src="js/jquery.min.js"></script>
+        
     <script>
     $('.header').load('index.html .public_top');
     $('.bottom').load('index.html .footer');
-    $('.side_r').load('index.html .side_right');
+    $('.side_r').load('index.html .side_right' );
     </script>
+
+
     </body>
 </html>

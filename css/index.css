@@ -38,11 +38,17 @@ input{
 }
 
 /*左侧分栏*/
+.column{
+  width: 1300px;
+  height: 400px;
+  margin: 0 auto;
+  /*background: orange;*/
+}
 .column_left{
     width: 210px;
     height: 385px;
     background: white;
-    margin-left:35px; 
+    margin-left:0px; 
     display: inline-block;
     /*float: left;*/
 }
@@ -187,11 +193,11 @@ input{
 
 /*轮播图*/
  .banner_box{
-  width: 750px;
+  width: 770px;
   height: 360px;
   
   position: absolute;
-  left: 240px;
+  left: 280px;
   top:180px;
  }
  .banner{

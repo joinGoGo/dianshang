@@ -108,10 +108,18 @@ height: 44px;}
 
 }
 
+.search_border{
+  width:250px;
+  height: 40px;
+  float: right;
+  margin-right:50px; 
+  position: relative;
+}
 .search{width: 200px;
 height: 35px;
 text-indent:1em;
  outline: medium;
+ display: inline-block;
 background: #efefef;
 margin-left:0px; }
 
@@ -122,11 +130,12 @@ margin-left:0px; }
     width: 35px;
     background: url(../images/header-total.gif)
     -465px -65px;
-    margin-left:-5px; 
-    float: right;
-    margin-right:91px; 
-
-}
+position: absolute;
+left: 200px;
+top: 0px;
+    
+    
+  }
 .nav{
     position: absolute;
     top:114px;

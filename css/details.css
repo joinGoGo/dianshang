@@ -119,3 +119,180 @@ body{
       width: 1080px;
     }
 
+/*商品介绍*/
+.introduce{
+    display: inline-block;
+    float: right;
+    width: 510px;
+    height: 400px;
+    /*background: orange;*/
+    /*border: 1px solid black;*/ 
+    margin-right:140px; 
+    margin-top:30px; 
+}
+.introduce h2{
+    font-size: 20px;
+    font-weight: 900;
+}
+.price{
+    width: 510px;
+    height: 120px;
+    background: #FFF0F0;
+        margin-top:10px; 
+}
+.price h3{
+    font-size: 28px;
+
+    color: red;
+    display: inline-block;
+}
+.price h4{
+    font-size: 14px;
+    
+    display: inline-block;
+}
+.price h5{
+     margin-top:10px; 
+}
+.price p{
+    margin-top:10px;
+    color: red;
+}
+.buy .rule{
+    margin-top:20px; 
+}
+.buy .rule p{
+    display: inline-block;
+}
+.buy .rule div {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    border:1px solid #ff464e;
+    line-height: 30px;
+    text-align: center;
+}
+.jia_jian{
+        float: left;
+        color: #666;
+        line-height: 32px;
+  }
+  .jia_jian{
+        overflow: hidden;
+        font-weight: normal;
+        margin-left:20px; 
+  }
+  .count{
+    margin-top:20px; 
+  }
+  .count_1{float: left;}
+  .count p i{
+        float: left;
+        font: bold 18px/26px "微软雅黑";
+        height: 26px;
+        text-align: center;
+        width: 26px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        user-select:none;
+  }
+  .count p input{
+        background: #f6f6f6;
+        font-size: 14px;
+        border-color: #e2e2e2;
+        border-style: solid;
+        border-width: 0 1px;
+        float: left;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 5px;
+        text-align: center;
+        width: 40px;
+        color: #8a8a8a;
+        font-family: "Arial";
+        outline: medium;
+
+  }
+  .click_buy{
+    float: left;
+    width: 370px;
+    height: 40px;
+    margin-top:50px; 
+    margin-left:80px; 
+
+  }
+   .click_buy input{
+        width: 156px;
+        height: 40px;
+        font-size: 18px;
+        border:1px solid #ff464e;
+        background: #FFF0F0;
+        color: #ff464e;
+   }
+   .click_buy input:last-child{
+    background: #ff464e;
+    color: #fff;
+    margin-left:50px; 
+   }
+/*隐藏元素 滚动浮现*/
+.scrol_nav{
+    position: fixed;
+    width: 1000px;
+    height: 70px;
+    left: 70px;
+    top: 0;
+    background: #ccc;
+    display: none;
+}
+.scrol_nav li{
+    float: left;
+    display: inline-block;
+    width: 141px;
+    height: 69px;
+    /*border-bottom: #ff464e solid 2px;*/
+    color: #ff464e;
+    line-height: 69px;
+    text-align: center;
+    border-right: 1px solid black;
+    cursor: pointer;s
+}
+.scrol_nav li a{
+    color: #fff;
+    line-height: 69px;
+    text-align: center;
+}
+.scrol_nav .car{
+    border-right: none;
+    background: #ff464e;
+    width: 146px;
+    color: white;
+}
+.scrol_nav li a:hover{
+    color: #ff464e;
+}
+.uper{
+    width: 100px;
+    height: 100px;
+    position:fixed;
+    background: white;
+    left: 1267px;
+    top:600px;
+    z-index: 100;
+    display: none;
+    line-height: 100px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+
+}
+/*图片展示*/
+.img_show{
+    background: black;
+    width: 100%;
+}
+.img_show div{
+    width: 800px;
+    height: 5800px;
+    margin: 0 auto;
+    
+}
