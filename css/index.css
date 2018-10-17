@@ -505,3 +505,6 @@ margin-left:20px;
 .side_right .side_bottom li:hover{
     background: rgba(255, 0, 0, 0.658);
 }
+.side_right .back_top{
+  display: none;
+}

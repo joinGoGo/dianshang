@@ -154,6 +154,16 @@ main{
   margin-left:38px; 
   text-indent: 1em;
 }
+ .repass{
+  width: 230px;
+  height: 38px;
+  border: 1px solid black;
+  
+  text-indent: 5px;
+  margin-top:30px; 
+  margin-left:38px; 
+  text-indent: 1em;
+}
 
 
 
@@ -166,6 +176,8 @@ main{
   color: white;
   margin-top:100px;
   margin-left:40px;  
+  cursor: pointer;
+  display: none;
 }
 .login-form .but:hover{
   opacity: 0.7;

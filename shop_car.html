@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <link rel="stylesheet" href="css/header.css">
+         <link rel="stylesheet" href="css/footer.css">
+          <script src="js/jquery.min.js"></script>
+          <style>
+                .car_main{
+                    width: 1200px;
+                    height: 600px;
+                    background: pink;
+                    margin: 30px auto;
+                }
+                li div{
+            display: inline-block;
+        }
+          </style>
+    </head>
+    <body>
+     <div class="header">
+        
+    </div> 
+    <div class="car_main">
+         <a href="good_list.html">跳转到商品页面</a>
+    <table class="table">
+            <thead>
+                <tr>
+                   <!-- <th>商品图片</th> -->
+                    <th>商品名称</th>
+                    <th>单价</th>
+                    <th>购买数量</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody class="tbox">
+                <tr>
+    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/shop.js"></script>
+
+ <div class="bottom">
+          
+    </div>
+    
+         <script>
+     $('th').css(
+       { 'width':'300',
+           });
+     $('td').css(
+       { 'text-align':'center',
+           });
+
+     </script>
+    <script>
+    $('.header').load('index.html .public_top');
+    $('.bottom').load('index.html .footer');
+    
+    </script>
+    </body>
+</html>

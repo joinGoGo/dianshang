@@ -1,0 +1,9 @@
+[
+    {"id": 1, "name": "牙刷", "price": 16},
+    {"id": 2, "name": "薯片", "price": 6},
+    {"id": 3, "name": "可乐", "price": 3},
+    {"id": 4, "name": "雪碧", "price": 3},
+    {"id": 5, "name": "棒棒糖", "price": 1},
+    {"id": 6, "name": "牙膏", "price": 16},
+    {"id": 7, "name": "百威啤酒", "price": 8}
+]

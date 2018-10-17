@@ -36,10 +36,10 @@
                 </div>
                
                <div>创建密码:
-                <input  class="pass" name="password" type="password" required="required" placeholder="6-16位数字或字母" />
+                <input  class="pass" name="password" type="password" required="required" placeholder="6位数字或字母" />
                 </div>
                  <div>确认密码:
-                <input  class="pass" name="sure_password" type="password" required="required" placeholder="6-16位数字或字母" />
+                <input  class="repass" name="sure_password" type="password" required="required" placeholder="6位数字或字母" />
                 </div>
               
                 <button class="but" type="submit" name="login-btn">立即注册</button>
@@ -48,6 +48,74 @@
 
 
     </div>
+       <!-- 表单验证 -->
+        <script>
+         var flag_1 = false;
+         var flag_2 = false;
+         var flag_3 = false;
+         var $but = document.querySelector('.but');
+         function check_name(){
+           var $namer = document.querySelector('.namer');
+           $namer.onblur = function(){
+             var user_name = $namer.value.trim();
+            console.log(user_name);
+            var reg = /^1[35789]\d{9}$/;
+           if(reg.test(user_name)){
+              $namer.style.border='2px solid green';
+              $namer.style.background='white';
+              flag_1 = true;
+             }
+             else{
+              $namer.style.background='#f2c7c8';
+              flag_1 = false;
+              $but.style.display = 'none';
+             }
+           }
+         }
+          var $pass = document.querySelector('.pass');
+          var user_pass;
+           function check_pass(){
+           $pass.onblur = function(){
+            user_pass = $pass.value.trim();
+             console.log(user_pass);
+            var reg = /^[a-z A-Z0-9]{6}$/;
+           if(reg.test(user_pass)){
+              $pass.style.border='2px solid green';
+              $pass.style.background='white';
+              flag_2 = true;
+             }
+             else{
+              $pass.style.background='#f2c7c8';
+              flag_2 = false;
+              $but.style.display = 'none';
+             }
+           }
+
+         }
+         function check_repass(){
+          var $repass = document.querySelector('.repass')
+          $repass.oninput = function(){
+            if($pass.value==$repass.value){
+               $repass.style.border='2px solid green';
+              $repass.style.background='white';
+              flag_3 = true;
+            }
+            else{
+              $repass.style.background='#f2c7c8';
+              flag_3 = false;
+               $but.style.display = 'none';
+            }
+             if(flag_1==flag_2==flag_3==true){
+            $but.style.display = 'block';
+         }
+          }
+         }
+         check_name();
+         check_pass();
+         check_repass();
+        
+         
+        </script>
    <script src="js/common/ajax.js"></script>
     <script src="js/register.js"></script>
     <script>

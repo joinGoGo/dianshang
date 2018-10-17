@@ -22,7 +22,7 @@
                         // »ñÈ¡¹ö¶¯¾àÀë
                        var top = document.documentElement.scrollTop;
                        console.log(top);
-                       if(top >= 100) {
+                       if(top >= 1000) {
                          $up.style.display = 'block';
                        } else {
                          $up.style.display = 'none';

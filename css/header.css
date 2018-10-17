@@ -161,12 +161,29 @@ padding-left: 20px;
 .nav li:hover a{
     color: #ff464e;
 }
+/*.nav li:nth-child(5):hover a{
+    color: #ff464e;
+}*/
 .nav li:nth-child(1) a{
    color:white;
 }
 
 
  /*头部*/
-
-
+/*<!-- Hover效果触发隐藏事件 -->*/
+ .nav #phone_xx{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 418px;
+    top: 41px;
+    background: url(../images/saoyisao.png);
+    display: none;
+    z-index: 100;
+}
+/*.nav li:nth-child(5):hover + .phone_ma{
+    /*display: block;*/
+    
+/*}*/
+.phone_touch:hover #phone_xx{display: block;}
 
