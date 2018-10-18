@@ -222,18 +222,40 @@ body{
 
   }
    .click_buy input{
-        width: 156px;
-        height: 40px;
-        font-size: 18px;
+        width: 100px;
+        height: 30px;
+        font-size: 24px;
         border:1px solid #ff464e;
         background: #FFF0F0;
         color: #ff464e;
+        text-indent: 12px;
+        margin-right:50px; 
    }
-   .click_buy input:last-child{
+      .click_buy button{
+        width: 200px;
+        height: 50px;
+        font-size: 24px;
+        border:1px solid #ff464e;
+        background: #FFF0F0;
+        color: #ff464e;
+        text-indent: 12px;
+        margin-right:50px; 
+        cursor: pointer;
+   }
+   .click_buy button:hover{
+    background: white;
+   }
+   .click_buy .table td:nth-child(1){
+    display: none;
+   }
+   .click_buy .table td:nth-child(2){
+    display: none;
+   }
+   /*.click_buy input:last-child{
     background: #ff464e;
     color: #fff;
     margin-left:50px; 
-   }
+   }*/
 /*隐藏元素 滚动浮现*/
 .scrol_nav{
     position: fixed;
